@@ -1,5 +1,5 @@
 import React from 'react';
-import './BatterySection.css';
+import styles from './index.module.css';
 import image1 from '../assets/images/image1.png';
 import image2 from '../assets/images/image2.png';
 import image3 from '../assets/images/image3.png';
@@ -26,23 +26,23 @@ const batteries = [
 
 function BatterySection() {
     return (
-        <section className="battery-section">
+        <section className= {styles.batterysection}>
             <h2>Buy Drone <span>Battries</span></h2>
-            <div className="battery-container">
+            <div className= {styles.batterycontainer}>
                 {batteries.map((battery, index) => (
-                    <div key={index} className="battery-card">
+                    <div key={index} className= {styles.batterycard}>
                         <img src={battery.icon} alt={battery.name} />
                         <p>{battery.name}</p>
-                        <div className="price-section">
-                            <span className="price">{battery.price}</span>
-                            <span className="original-price">{battery.originalPrice}</span>
-                            <button className="buy-button">Buy Now</button>
+                        <div className={styles.pricesection}>
+                            <span className= {styles.price}>{battery.price}</span>
+                            <span className={styles.originalprice}>{battery.originalPrice}</span>
+                            <button className={styles.buybutton}>Buy Now</button>
                         </div>
                         
                     </div>
                 ))}
             </div>
-            <div className="shop-category-button">
+            <div className={styles.shopcategorybutton}>
                 <button>Shop By Category <span>&rarr;</span></button>
             </div>
         </section>
