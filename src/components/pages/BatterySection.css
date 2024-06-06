@@ -1,9 +1,8 @@
 .battery-section {
-    width: 1512px;
+    width: 100%;
     text-align: center;
     background-color: rgba(128, 202, 255, 0.07);
     height: 788px;
-    margin: 1310px 0 2956px;
 }
 
 .battery-section h2 {

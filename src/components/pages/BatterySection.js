@@ -1,8 +1,8 @@
 import React from 'react';
 import './BatterySection.css';
-import image1 from './image1.png';
-import image2 from './image2.png';
-import image3 from './image3.png';
+import image1 from '../images/image1.png';
+import image2 from '../images/image2.png';
+import image3 from '../images/image3.png';
 const batteries = [
     {
         name: 'mPower 6S 25200 mAh Lithium Ion Drone Battery Pack with XT90-S Anti Spark Connector',
