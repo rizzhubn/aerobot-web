@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BatterySection from './components/pages/BatterySection';
+import BatterySection from './pages/BatterySection';
 import './App.css';
 
 function App() {
