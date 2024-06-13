@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import propel1 from "../assets/images/propellorImages/propel1.png";
-import propel2 from "../assets/images/propellorImages/propel2.png";
-import propel3 from "../assets/images/propellorImages/propel3.png";
-import right from "../assets/images/arrow-right.png";
+import propel1 from "../../assets/propellorImages/propel1.png";
+import propel2 from "../../assets/propellorImages/propel2.png";
+import propel3 from "../../assets/propellorImages/propel3.png";
+import right from "../../assets/arrow-right.png";
 import styles from './propeller.module.css';
 
 const cardData = [
@@ -22,7 +22,7 @@ const Card = ({ image, name, curPrice, prevPrice }) => (
     <div className={styles.cardPriceContainer}>
       <div>
         <span className={styles.currentPrice}>₹{curPrice}</span>
-        <span className={styles.previousPrice}> ₹{prevPrice}</span>
+        <span className={styles.previousPrice}>{prevPrice}</span>
       </div>
       <div>
         <button className={styles.buyButton}>Buy Now</button>
@@ -67,7 +67,7 @@ const Propeller = () => {
         <button className={styles.viewAllButton}>
           <div className={styles.viewAllButtonContent}>
             <div>View All</div>
-            <img src={right} alt="right" />
+            <img src={right} alt="" />
           </div>
         </button>
       </div>

@@ -3,18 +3,18 @@ import React, { useState } from "react";
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 
-import certify from "../assets/images/certify.png";
-import upRight from "../assets/images/arrow-up-right.png";
-import right from "../assets/images/arrow-right.png";
+import certify from "../../assets/certify.png";
+import upRight from "../../assets/arrow-up-right.png";
+import right from "../../assets/arrow-right.png";
 
-import agriDrone from "../assets/images/droneImages/agridrone.png";
-import syena from "../assets/images/droneImages/syena.png";
-import agricopter from "../assets/images/droneImages/agricopter.png";
+import agriDrone from "../../assets/droneImages/agridrone.png";
+import syena from "../../assets/droneImages/syena.png";
+import agricopter from "../../assets/droneImages/agricopter.png";
 
 // logos
-import agridroneLogo from "../assets/images/droneLogo/agridroneLogo.png";
-import syenaLogo from "../assets/images/droneLogo/syenaLogo.png";
-import agricopterLogo from "../assets/images/droneLogo/agricopterLogo.png";
+import agridroneLogo from "../../assets/droneLogo/agridroneLogo.png";
+import syenaLogo from "../../assets/droneLogo/syenaLogo.png";
+import agricopterLogo from "../../assets/droneLogo/agricopterLogo.png";
 
 import styles from "./Drone.module.css"; // Import the CSS module
 
