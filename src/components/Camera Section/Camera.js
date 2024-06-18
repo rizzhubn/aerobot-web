@@ -13,6 +13,7 @@ const cardData = [
   { image: caddx, name: "Caddx Ratel 2 1/1.8″ 1200TVL 2.1mm Camera Red", curPrice: 2000, prevPrice: 3000 }
 ];
 
+
 const Card = ({ image, name, curPrice, prevPrice }) => (
   <div className={styles.card}>
     <div className={styles.cardImageContainer}>

@@ -11,6 +11,7 @@ const cardData = [
   { image: battery3, name: "mPower 6S 16800 mAh Lithium Ion Drone Battery Pack with XT90-S Anti Spark Connector", curPrice: 2000, prevPrice: 3000 }
 ];
 
+
 const Card = ({ image, name, curPrice, prevPrice }) => (
   <div className={styles.card}>
     <div className={styles.cardImageContainer}>
