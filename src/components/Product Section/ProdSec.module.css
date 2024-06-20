@@ -1,0 +1,91 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #216FB9;
+    border-radius: 1rem;
+    padding: 0 2rem;
+    padding-top: 1rem; 
+    max-width: 24rem; 
+    margin: 1rem;
+    position: relative;
+    background-color: white;
+  }
+  
+  .iconCircle {
+    background-color: #216FB9;
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .content {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin: 0 1rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cost {
+    color: #216FB9;
+    font-size: 2rem; 
+    font-weight:500;
+  }
+  
+  .label {
+    color: #6E7898;
+    font-size: 1.25rem; 
+  }
+  .ProductSpecification{
+    max-width: 1280px;  
+    color: #216FB9; 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #80CAFF12; 
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+  }
+  .AgriDetail {
+    max-width: 1024px; 
+    display: flex;  
+    margin-left: auto; 
+    margin-right: auto; 
+    color: #6E7898; 
+    justify-content: center;
+    align-items: center; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+    text-align: center; 
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+  }
+  .specCard {
+    max-width: 1280px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: center; 
+    gap: 4rem;  
+    align-items: center;  
+  }
+  

@@ -22,8 +22,8 @@ const Card = ({ image, name, curPrice, prevPrice }) => (
     <h3 className={styles.cardTitle}>{name}</h3>
     <div className={styles.cardPriceContainer}>
       <div>
-        <span className={styles.currentPrice}>₹{curPrice}</span>
-        <span className={styles.previousPrice}>{prevPrice}</span>
+        <span className={styles.currentPrice}>₹{curPrice} </span>
+        <span className={styles.previousPrice}>₹{prevPrice}</span>
       </div>
       <div>
         <button className={styles.buyButton}>Buy Now</button>
