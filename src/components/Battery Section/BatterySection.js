@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import right from "../../assets/arrow-right-white.png";
 import battery1 from "../../assets/batteryImages/battery1.png";
 import battery2 from "../../assets/batteryImages/battery2.png";
@@ -12,7 +13,7 @@ const cardData = [
 ];
 
 
-const Card = ({ image, name, curPrice, prevPrice }) => (
+const Card = ({ image, name, curPrice, prevPrice, navigation }) => (
   <div className={styles.card}>
     <div className={styles.cardImageContainer}>
       <img src={image} alt={name} className={styles.cardImage} />
@@ -24,13 +25,20 @@ const Card = ({ image, name, curPrice, prevPrice }) => (
         <span className={styles.previousPrice}>₹{prevPrice}</span>
       </div>
       <div>
-        <button className={styles.buyButton}>Buy Now</button>
+        <div onClick={navigation}  >
+        <button className={styles.buyButton}>Buy Now</button>  
+        </div>
       </div>
     </div>
   </div>
 );
 
 const Battery = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('/battery-details')
+  }
 
   return (
     <div className={styles.parent}>
@@ -42,7 +50,7 @@ const Battery = () => {
 
         <div className={styles.cardsContainer}>
           {cardData.map((card, index) => (
-            <Card key={index} name={card.name} image={card.image} curPrice={card.curPrice} prevPrice={card.prevPrice} />
+            <Card key={index} name={card.name} image={card.image} curPrice={card.curPrice} prevPrice={card.prevPrice} navigation={handleNavigation} />
           ))}
         </div>
 
