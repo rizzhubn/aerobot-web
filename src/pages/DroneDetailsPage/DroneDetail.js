@@ -4,7 +4,7 @@ import Marut from '../../components/MarutDrone/Marut'
 import ProdSec from '../../components/Product Section/ProdSec'
 import DroneVideo from '../../components/DroneVideo/DroneVideo'
 import BackDrone from '../../components/BackDrone/BackDrone'
-import FAQSection from '../../components/Faq/FAQ'
+import FAQ from '../../components/FAQ/faq1'
 const DroneDetail = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const DroneDetail = () => {
       <Marut/>
       <ProdSec/>
       <DroneVideo/>
-      <FAQSection/>
+      <FAQ/>
     </>
   )
 }

@@ -4,7 +4,6 @@ import Battery1 from '../../assets/BatteryDetImages/DroneImageBig.png'
 import Battery2 from '../../assets/BatteryDetImages/DroneImagesmall1.png'
 import Battery3 from '../../assets/BatteryDetImages/DroneImagesmall2.png'
 import Battery4 from '../../assets/BatteryDetImages/DroneImagesmall3.png'
-import Battery5 from '../../assets/BatteryDetImages/DroneImagesmall4.png'
 
 const DroneBattery = () => {
   const [quantity, setQuantity] = useState(2);
@@ -29,10 +28,14 @@ const DroneBattery = () => {
           occurs first. If your drone uses a different battery cover or the size mentioned would not fit your drone, please send a custom enquiry or reach
           out to us over call or WhatsApp.
         </p>
+        <div className={styles.Bimage}>
+        <div className={styles.Battery1image}><img src={Battery1}/></div>
         <div className={styles.images}>
-          <img src={Battery1} alt="Battery Image 1" />
           <img src={Battery2} alt="Battery Image 2" />
+          <img src={Battery3} alt="Battery Image 3" />
+          <img src={Battery4} alt="Battery Image 4" />
           <div className={styles.moreImages}>+2</div>
+        </div>
         </div>
       </div>
       <div className={styles.purchaseInfo}>

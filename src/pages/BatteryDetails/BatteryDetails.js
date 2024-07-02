@@ -1,21 +1,22 @@
-import React from 'react'
-import SubHeader from '../../components/SubHeader/SubHeader'
-import BatterySec from '../../components/BatteryDrone/BatteryDrone'
-import BackBattery from '../../components/BackBattery/BackBattery.js/BackBattery'
-import BatterySpec from '../../components/BatterySpecs/BatterySpec'
-import FAQSection from '../../components/Faq/FAQ'
+import React from 'react';
+import SubHeader from "../../components/SubHeader/SubHeader";
+import HeaderLink from "../../components/BackBattery/BackBattery/BackBattery";
+import BatterySection from "../../components/BatteryDrone/BatteryDrone";
+import BatterySpecifications from "../../components/BatterySpecs/BatterySpec";
+import FAQ from '../../components/FAQ/faq1';
 
-const BatteryDetail = () => {
-  return (
-    <>
-      <SubHeader/>
-      <BackBattery/>
-      <BatterySec/>
-      <BatterySpec/>
-      <FAQSection/>
-    </>
-  )
+
+const BatteryDetails = () => {
+    
+return (
+        <>
+            <SubHeader/>
+            <HeaderLink />
+            <BatterySection/>
+            <BatterySpecifications/>
+            <FAQ/>
+        </>
+    )
 }
 
-
-export default BatteryDetail
+export default BatteryDetails
