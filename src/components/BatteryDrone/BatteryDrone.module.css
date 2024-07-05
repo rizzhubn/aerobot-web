@@ -1,281 +1,296 @@
 .container {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.productInfo {
+  width: 100%;
+}
+
+.productInfo h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.productInfo p {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.Bimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Battery1image {
+  width: 100%;
+  max-width: 496px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.images img {
+  width: 78px;
+  height: 69px;
+  border-radius: 10px;
+  border: 1px solid #216FB9;
+  cursor: pointer;
+}
+
+.moreImages {
+  width: 78px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #216FB9;
+  height: 69px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #216FB9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  border: 2px solid #000;
+}
+
+.purchaseinfo {
+  padding: 20px;
+  width: 100%;
+  border-radius: 18px;
+  background: rgba(128, 202, 255, 0.07);
+  color: #0D47A1;
+}
+
+.price {
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  text-align: right;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.discountedPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(33, 111, 185, 1);
+  margin-left: 1rem;
+}
+
+.perPiece {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 0.5rem;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 17px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 0.8px solid rgba(217, 217, 217, 0.7);
+}
+
+.pincode {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.pincode label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 31px;
+  border-bottom: 0.8px solid rgba(217, 217, 217, 0.7);
+}
+
+.pincode input {
+  width: calc(60% - 10px);
+  height: 39px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(217, 217, 217, 0.4);
+  background: #80CAFF12;
+  color: rgba(166, 166, 166, 1);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pincode button {
+  width: calc(40% - 10px);
+  height: 39px;
+  border-radius: 4px;
+  color: rgba(33, 111, 185, 1);
+  border: 1px solid rgba(33, 111, 185, 1);
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.quantity {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.8px solid #D9D9D9B2;
+}
+
+.quantity label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+}
+
+.quantitySelector span {
+  width: 48px;
+  height: 28px;
+  border: 1px solid #216FB9;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus, .minus {
+  width: 32px;
+  height: 28px;
+  border-radius: 0 3.78px 3.78px 0;
+  background: linear-gradient(90deg, #216FB9 0%, #0F3253 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  border-radius: 0 3.78px 3.78px 0;
+}
+
+.minus {
+  border-radius: 3.78px 0 0 3.78px;
+}
+
+.extraInfo {
+  font-size: 10px;
+  color: #6E7898;
+  margin-bottom: 20px;
+}
+
+.extraInfo a {
+  color: #216FB9;
+  text-decoration: underline;
+}
+
+.shipping {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #6E7898;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.shipping img {
+  width: 23px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.buyButton {
+  width: 100%;
+  max-width: 457px;
+  height: 46px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #216FB9 0%, #0F3253 100%);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
     margin-top: 40px;
+    padding: 0;
   }
-  
+
   .productInfo {
     margin-left: 120px;
     width: 586px;
   }
-  
-  .productInfo h1 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 28px;
-  }
-  
-  .productInfo p {
-    font-size: 14px;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-  }
-  
-  .Bimage{
-    display: flex;
+
+  .Bimage {
     flex-direction: row-reverse;
     gap: 15px;
   }
 
   .images {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
   }
-  
-  .images img {
-    width: 78px;
-    height: 69px;
-    padding: 0px 0px 1px 0px;
-    gap: 0px;
-    border-radius: 10px; 
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    background: #FFFFFF;
-    border: 1px solid #216FB9
-  }
 
-  .Battery1image{
-    width: 496px;
-    height: 333px;
-    margin-top: 15px;
-    gap: 0px;
-    border-radius: 10px 0px 0px 0px;
-    opacity: 0px;
-  }
-
-  .moreImages {
-    width: 78px;
-    font-size: 24px;
-    font-weight: 500;
-    color:  #216FB9;
-    height: 69px;
-    border-radius: 10px; 
-    opacity: 0px;
-    background: #FFFFFF;
-    border: 1px solid #216FB9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   .purchaseinfo {
     padding: 40px 30px 25px 33px;
     width: 607px;
     height: 516px;
     margin-left: 76px;
     border-radius: 18px;
-    opacity: 0px;
-    background: rgba(128, 202, 255, 0.07);
-    color: #0D47A1;
-  }
-  
-  .price {
-    color: rgba(0, 0, 0, 1);
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .right {
-    text-align: right;
-  }
-  
-  .originalPrice {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 1);
-    font-size: 12px;
-    font-weight: 500;
-  }
-  
-  .discountedPrice {
-    font-size: 18px;
-    font-weight: 600;
-    color: rgba(33, 111, 185, 1);
-    margin-left: 1rem;
-  }
-  
-  .perPiece {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 1);
-    margin-left: 0.5rem;
-  }
-  
-  .delivery {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    margin-bottom: 17px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 500;
-    padding-bottom: 20px;
-    border-bottom: 0.8px solid rgba(217, 217, 217, 0.7);
-  }
-  
-  .pincode {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 22px;
-  }
-  
-  .pincode label {
-    
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: rgba(0, 0, 0, 1);
-  }
-  
-  .check{
-    display: flex;
-    flex-direction: row;
-    gap: 29px;
-    padding-bottom: 31px;
-    border-bottom: 0.8px solid rgba(217, 217, 217, 0.7)
   }
 
-  .pincode input {
-    width: 269px;
-    height: 39px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(217, 217, 217, 0.4);
-    background: #80CAFF12;
-    color: rgba(166, 166, 166, 1);
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  
-  .pincode button {
-    width: 248px;
-    height: 39px;
-    gap: 0px;
-    border-radius: 4px ;
-    color: rgba(33, 111, 185, 1);
-    border: 1px solid rgba(33, 111, 185, 1);
-    cursor: pointer;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  
   .quantity {
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
     gap: 324px;
-    border-bottom: 0.8px solid #D9D9D9B2;
   }
-  
-  .quantity label {
-    flex: none;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: rgba(0, 0, 0, 1);
-
-  }
-  
-  .quantitySelector span{
-    width: 48.12px;
-    border: 0.01px solid #216FB9;
-    height: 28.07px;
-    color: #000000;
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .quantitySelector {
-    left: 200px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .plus{
-    width: 32.07px;
-    height: 28.07px;
-    top: 287px;
-    left: 545.19px;
-    gap: 0px;
-    border-radius: 0px 3.78px 3.78px 0px;
-    opacity: 0px;
-    background: linear-gradient(90deg, #216FB9 0%, #0F3253 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .minus{
-    width: 32.07px;
-    height: 28.07px;
-    top: 287px;
-    left: 465px;
-    gap: 0px;
-    border-radius: 3.78px 0px 0px 3.78px;
-    opacity: 0px;
-    background: linear-gradient(90deg, #216FB9 0%, #0F3253 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .extraInfo {
-    font-size: 10px;
-    color: #6E7898;
-    margin-bottom: 20px;
-  }
-  
-  .extraInfo a {
-    color: #216FB9;
-    text-decoration: underline;
-  }
-  
-  .shipping {
-    width: 281px;
-    height: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #6E7898;
-    margin-left: 120px;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-  .shipping img{
-    width: 23.21px;
-    height: 10.93px;
-  }
-
-  .buyButton {
-    width: 457px;
-    height: 46px;
-    border-radius: 8px ;
-    border: 1px ;
-    opacity: 0px;
-    background: linear-gradient(180deg, #216FB9 0%, #0F3253 100%);
-    color: rgba(255, 255, 255, 1);
-    margin-left: 40px;
-  }
-  
+}
