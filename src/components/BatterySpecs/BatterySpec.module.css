@@ -1,15 +1,17 @@
 .container {
   font-family: 'Montserrat' , sans-serif;
-  margin: 20px;
-  padding: 20px;
+  margin-top: 44px;
   border-radius: 8px;
-  max-width: 600px; /* Set a max-width to limit the width of the container */
+  max-width: 600px;
+  margin-left: 120px; /* Set a max-width to limit the width of the container */
 }
 
 .title {
   font-size: 24px;
   color: #216FB9;
   margin-bottom: 20px;
+  border-bottom: 1px solid #216FB9;
+  border-block-end: 10px;
 }
 
 .specificationTable {
@@ -82,4 +84,14 @@
 .download {
   margin-left: auto;
   color: #216FB9;
+}
+
+@media (max-width: 768px){
+  .container {
+    font-family: 'Montserrat' , sans-serif;
+    margin: 16px;
+  }
+
+
+
 }
